@@ -15,7 +15,6 @@
             $operacao = $_POST['operacao'];
 
             if (!is_numeric($n1) || !is_numeric($n2)) {
-                echo 'caiu aqui';
                 $_SESSION['erro'] = 'n1 ou n2 n eh numero';
                 header('location:index.php');
                 return;
